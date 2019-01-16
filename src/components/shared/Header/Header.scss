@@ -1,8 +1,185 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+// Variables
+$blue: #219DDB;
+$white: #FFF;
+$brown: #482F30;
+
+// Devices
+$ipad: 1024px;
+$iphone6: 768px;
+$smaller: 420px;
+
+// Styles
 .siteHeader {
   width: 100%;
-  height: 500px;
-  border: 1px solid red;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  height: 700px;
   text-align: center;
+  border: 1px solid green;
+
+  .menu {
+    width: 100%;
+    border-bottom: 3px solid $blue;
+    height: 90px;
+    text-align: left;
+    position: relative;
+    background-color: $brown;
+    font-family: 'Gochi Hand', cursive;
+
+    .agencyName {
+      position: absolute;
+      left: 230px;
+      top: 20px;
+      margin: 0px;
+
+      a {
+        text-decoration: none;
+        font-size: 34px;
+        color: $white;
+
+        span {
+          color: $blue;
+          margin-right: 8px;
+          font-size: 48px;
+          font-family: 'Montserrat', sans-serif;
+        }
+
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+
+    .contactus {
+      position: absolute;
+      right: 40px;
+      color: $white;
+      bottom: 10px;
+      margin: 0px;
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .logo {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      left: 100px;
+      top: 5px;
+    }
+  }
+
+  .bg {
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-image: url('./puppy.jpeg');
+    background-size: 100%;
+
+    .animateText {
+      width: 100%;
+      position: absolute;
+      bottom: 20px;
+      align-items: center;
+      justify-content: center;
+      color: $blue;
+      font-family: 'Gochi Hand', cursive;
+
+      &:after {
+        animation: changeLetter 3s linear infinite alternate;
+        display: block;
+        content: "Meet The Dogs";
+        font-size: 60px;
+      }
+    }
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: $ipad) {
+  .siteHeader {
+    .menu  {
+      height: 120px;
+    }
+
+    .bg {
+      .animateText {
+        top: 210px;
+
+        &:after {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $iphone6) {
+  .siteHeader {
+    height: auto;
+
+    .menu  {
+      .agencyName {
+        left: 130px;
+        top: 45px;
+
+        a {
+          font-size: 20px;
+
+          span {
+            font-size: 24px;
+          }
+        }
+      }
+
+      .logo {
+        left: 10px;
+      }
+
+      .contactus {
+        left: 130px;
+        font-size: 11px;
+      }
+    }
+
+    .bg {
+      height: 280px;
+    }
+  }
+}
+
+@media screen and (max-width: $smaller) {
+  .siteHeader {
+    .menu  {
+      .agencyName {
+        left: 130px;
+        top: 45px;
+
+        a {
+          font-size: 16px;
+
+          span {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Animation for text in header */
+@keyframes changeLetter {
+  0% {
+    content: "Looking for love?";
+    font-family: 'Montserrat', sans-serif;
+  }
+  50% {
+    color: $white;
+  }
+  100% {
+    content: "Meet The Dogs";
+  }
 }

@@ -3,19 +3,25 @@ import React, { Fragment } from 'react';
 
 // Styles
 import styles from './Header.scss';
-
-import puppy from '@images/puppy.jpeg';
+import logo from '@images/logo.png';
 
 const Header = () => {
   return (
     <header className={styles.siteHeader}>
       <Fragment>
-        <h1>Puppy image gallery</h1>
-        <img src={puppy} />
-        <blockquote>
-          <p>A dog will teach you unconditional love. If you can have that in your life, things won't be too bad.</p>
-          <cite>&mdash;Robert Wagner</cite>
-        </blockquote>
+        <nav className={styles.menu}>
+          <img className={styles.logo} src={logo} alt="Asana Pet Adoption" />
+          <p className={styles.agencyName}>
+            <a href="#">
+              <span>Asana</span>
+               pet adoption agency
+            </a>
+          </p>
+          <p className={styles.contactus}>Contact Us: (800)-555-43-21</p>
+        </nav>
+        <div className={styles.bg}>
+          <div className={styles.animateText}></div>
+        </div>
       </Fragment>
     </header>
   );
