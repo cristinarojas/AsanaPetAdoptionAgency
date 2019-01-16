@@ -3,11 +3,13 @@
     "@babel/preset-env",
     "@babel/preset-react"
   ],
-  "env": {
-    "development": {
-      "plugins": [
-        "react-hot-loader/babel"
-      ]
-    }
-  }
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./"],
+      "alias": {
+        "@components": "./src/components",
+        "@images": "./src/shared/images",
+      }
+    }]
+  ]
 }
