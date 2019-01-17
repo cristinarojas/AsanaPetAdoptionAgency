@@ -16,52 +16,98 @@ import p8 from '@images/pets/8.jpeg';
 
 const Gallery = () => {
   return (
-    <section className={styles.contentGallery}>
-      <Fragment>
-        <div className={styles.flexbox}>
-          <div className={styles.item}>
-            <img src={p1}  />
-            <p className={styles.title}>1st item</p>
+    <Fragment>
+      <section className={styles.contentGallery}>
+    		<div className={styles.view}></div>
+
+        <div className={styles.options}>
+          <div className={styles.mousescroll}>
+            mouse
           </div>
-          <div className={styles.item}>
-            <img src={p2} />
-            <p className={styles.title}>2nd item</p>
-          </div>
-          <div className={styles.item}>
-            <img src={p3} />
-            <p className={styles.title}>3rd item</p>
-          </div>
-          <div className={styles.item}>
-            <img src={p4} />
-            <p className={styles.title}>4th item</p>
-          </div>
-          <div className={styles.item}>
-            <img src={p5} />
-            <p className={styles.title}>5th item</p>
-          </div>
-          <div className={styles.item}>
-            <img src={p6} />
-            <p className={styles.title}>6th item</p>
-          </div>
-          <div className={styles.item}>
-            <img src={p7} />
-            <p className={styles.title}>7th item</p>
-          </div>
-          <div className={styles.item}>
-            <img src={p8} />
-            <p className={styles.title}>8th item</p>
-          </div>
-          <div className={styles.item}>
-            <img src={p1} />
-            <p className={styles.title}>9th item</p>
-          </div>
-          <div className={styles.item}>
-            <img src={p2} />
-            <p className={styles.title}>10th item</p>
+
+          <div className={styles.scroll}>
+            <ul className={styles.list}>
+              <li>
+                <a href="#">
+                  <img className={styles.min} src={p1} alt="Asana" />
+                  <div className={styles.show}>
+                    <img className={styles.max} src={p1} alt="Asana" />
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img className={styles.min} src={p2} alt="Asana" />
+                  <div className={styles.show}>
+                    <img className={styles.max} src={p2} alt="Asana" />
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img className={styles.min} src={p3} alt="Asana" />
+                  <div className={styles.show}>
+                    <img className={styles.max} src={p3} alt="Asana" />
+                  </div>
+                </a>
+              </li>
+
+
+              <li>
+                <a href="#">
+                  <img className={styles.min} src={p4} alt="Asana" />
+                  <div className={styles.show}>
+                    <img className={styles.max} src={p4} alt="Asana" />
+                  </div>
+                </a>
+              </li>
+
+
+              <li>
+                <a href="#">
+                  <img className={styles.min} src={p5} alt="Asana" />
+                  <div className={styles.show}>
+                    <img className={styles.max} src={p5} alt="Asana" />
+                  </div>
+                </a>
+              </li>
+
+
+              <li>
+                <a href="#">
+                  <img className={styles.min} src={p6} alt="Asana" />
+                  <div className={styles.show}>
+                    <img className={styles.max} src={p6} alt="Asana" />
+                  </div>
+                </a>
+              </li>
+
+
+              <li>
+                <a href="#">
+                  <img className={styles.min} src={p7} alt="Asana" />
+                  <div className={styles.show}>
+                    <img className={styles.max} src={p7} alt="Asana" />
+                  </div>
+                </a>
+              </li>
+
+
+              <li>
+                <a href="#">
+                  <img className={styles.min} src={p8} alt="Asana" />
+                  <div className={styles.show}>
+                    <img className={styles.max} src={p8} alt="Asana" />
+                  </div>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </Fragment>
-    </section>
+    	</section>
+    </Fragment>
   );
 }
 
