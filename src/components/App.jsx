@@ -14,6 +14,7 @@ const App = props => (
   <div>
     <Header />
     <Puppies />
+    <Text />
     <Gallery />
   </div>
 );

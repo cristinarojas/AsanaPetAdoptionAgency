@@ -1,6 +1,19 @@
 .contentText {
-  border:1px solid red;
-  height: 60px;
+  height: 100%;
   width: 100%;
   text-align: left;
+  padding: 10px;
+  padding-left: 40px;
+
+  .title {
+    font-size: 28px;
+    font-family: 'Gochi Hand', cursive;
+  }
+
+  .heroText {
+    font-size: 16px;
+    margin-right: 100px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 100px;
+  }
 }
