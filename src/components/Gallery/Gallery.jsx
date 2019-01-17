@@ -16,7 +16,7 @@ import p8 from '@images/pets/8.jpeg';
 
 const Gallery = () => {
   return (
-    <header className={styles.contentGallery}>
+    <section className={styles.contentGallery}>
       <Fragment>
         <div className={styles.flexbox}>
           <div className={styles.item}>
@@ -61,7 +61,7 @@ const Gallery = () => {
           </div>
         </div>
       </Fragment>
-    </header>
+    </section>
   );
 }
 

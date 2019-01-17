@@ -12,7 +12,7 @@ const Text = () => {
           Meet The Dogs
         </span>
         <p className={styles.heroText}>
-          Be a hero this month and adopt a dog from your local shelter or rescue group. You’ll be saving his or her life and greatly improving your own as dogs are amazing, supportive, and heroic companions.
+          Be a hero this month and adopt a dog, dogs will teach you unconditional love. If you can have that in your life, things won't be too bad. You’ll be saving his or her life and greatly improving your own as dogs are amazing, supportive, and heroic companions.
         </p>
         <span className={styles.title}>
           Gallery
