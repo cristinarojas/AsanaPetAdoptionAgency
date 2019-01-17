@@ -17,7 +17,12 @@ const Header = () => {
                pet adoption agency
             </a>
           </p>
-          <p className={styles.contactus}>Contact Us: (800)-555-43-21</p>
+          <p className={styles.contactus}>
+            Contact Us: (800)-555-43-21
+            <a href="#">
+              <i className={'fas fa-map-marker-alt'}></i>
+            </a>
+          </p>
         </nav>
         <div className={styles.bg}>
           <div className={styles.animateText}></div>

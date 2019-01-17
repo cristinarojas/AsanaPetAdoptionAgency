@@ -60,6 +60,16 @@ $smaller: 420px;
       margin: 0px;
       font-size: 14px;
       font-family: 'Montserrat', sans-serif;
+
+      a {
+        text-decoration: none;
+
+        i {
+          color: #ff3c3c;
+          font-size: 22px;
+          margin-left: 8px;
+        }
+      }
     }
 
     .logo {
