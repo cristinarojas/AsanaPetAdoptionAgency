@@ -1,5 +1,5 @@
 // Dependencies
-import React, { Fragment } from 'react';
+import React, { Fragment, Component } from 'react';
 
 // Styles
 import styles from './Gallery.scss';
@@ -90,34 +90,42 @@ const dogs = [
   }
 ];
 
-const Gallery = () => {
-  return (
-    <Fragment>
-      <section className={styles.contentGallery}>
-        <aside className={styles.options}>
-          <div className={styles.mousescroll}>
-            mouse
-          </div>
+class Gallery extends Component {
 
-          <div className={styles.scroll}>
-            <ul className={styles.list}>
-              { dogs.map((dog, key) => (
-                <li key={key}>
-                  <a href="#">
-                    <p>{dog.name}</p>
-                    <img className={styles.min} src={require(`./${dog.image}`)} alt="Asana" />
-                    <div className={styles.show}>
-                      <img className={styles.max} src={require(`./${dog.image}`)} alt="Asana" />
-                    </div>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </aside>
-    	</section>
-    </Fragment>
-  );
+  // Open & close gallery image
+  toggle() {
+
+
+  }
+
+  render() {
+    return (
+      <Fragment>
+        <section className={styles.contentGallery}>
+          <aside className={styles.options}>
+            <div className={styles.mousescroll}>
+              mouse
+            </div>
+
+            <div className={styles.scroll}>
+              <ul className={styles.list}>
+                { dogs.map((dog, key) => (
+                  <li
+                    key={key}
+                    onClick={this.toggle}
+                    >
+
+                      <img className={styles.thumbnail} src={require(`./${dog.image}`)} alt="Asana" />
+                      <span>{dog.name}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </aside>
+      	</section>
+      </Fragment>
+    );
+  }
 }
 
 export default Gallery;
