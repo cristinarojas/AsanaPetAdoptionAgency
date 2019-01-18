@@ -46,6 +46,48 @@ const dogs = [
     "source": "https://unsplash.com/photos/6WneSv56YVI",
     "name": "honey"
   },
+  ,
+  {
+    "image": "pets/9.jpeg",
+    "source": "https://unsplash.com/photos/CdVG9f96kyg",
+    "name": "honey"
+  },
+  ,
+  {
+    "image": "pets/10.jpeg",
+    "source": "https://unsplash.com/photos/bVA2DI7c9e8",
+    "name": "honey"
+  },
+  ,
+  {
+    "image": "pets/11.jpeg",
+    "source": "https://unsplash.com/photos/GvhSUEN-Lm8",
+    "name": "honey"
+  },
+  ,
+  {
+    "image": "pets/12.jpeg",
+    "source": "https://unsplash.com/photos/t2XHKIdc4Kw",
+    "name": "honey"
+  },
+  ,
+  {
+    "image": "pets/13.jpeg",
+    "source": "https://unsplash.com/photos/saRU3vzmgkY",
+    "name": "honey"
+  },
+  ,
+  {
+    "image": "pets/14.jpeg",
+    "source": "https://unsplash.com/photos/1z-kI6gIEpg",
+    "name": "honey"
+  },
+  ,
+  {
+    "image": "pets/15.jpeg",
+    "source": "https://unsplash.com/photos/zHZ2nTnBnAQ",
+    "name": "honey"
+  }
 ];
 
 const Gallery = () => {
