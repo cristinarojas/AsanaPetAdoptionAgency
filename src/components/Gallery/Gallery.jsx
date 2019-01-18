@@ -94,8 +94,6 @@ const Gallery = () => {
   return (
     <Fragment>
       <section className={styles.contentGallery}>
-    		<article className={styles.view}></article>
-
         <aside className={styles.options}>
           <div className={styles.mousescroll}>
             mouse
