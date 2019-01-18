@@ -52,9 +52,9 @@ const Gallery = () => {
   return (
     <Fragment>
       <section className={styles.contentGallery}>
-    		<div className={styles.view}></div>
+    		<article className={styles.view}></article>
 
-        <div className={styles.options}>
+        <aside className={styles.options}>
           <div className={styles.mousescroll}>
             mouse
           </div>
@@ -74,7 +74,7 @@ const Gallery = () => {
               ))}
             </ul>
           </div>
-        </div>
+        </aside>
     	</section>
     </Fragment>
   );
