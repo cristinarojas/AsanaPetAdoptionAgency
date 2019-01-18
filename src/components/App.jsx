@@ -3,6 +3,7 @@ import React from 'react';
 
 // Shared Components
 import Header from './shared/Header/Header';
+import Footer from './shared/Footer/Footer';
 import Text from './shared/Content/Text/Text';
 
 
@@ -16,6 +17,7 @@ const App = props => (
     <Puppies />
     <Text />
     <Gallery />
+    <Footer />
   </div>
 );
 

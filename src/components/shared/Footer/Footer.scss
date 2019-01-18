@@ -1,0 +1,14 @@
+// This is a general style file - share different colors, sizes, etc.
+@import '../../../shared/styles/generalStyles.scss';
+
+// Footer styles
+.siteFooter {
+  height: 100px;
+  width: 100%;
+  background-color: $brown;
+  color: $white;
+  line-height: 100px;
+  padding-left: 40px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}

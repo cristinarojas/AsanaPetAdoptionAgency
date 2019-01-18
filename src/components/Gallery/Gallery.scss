@@ -1,18 +1,14 @@
-// Variables
-$blue: #219DDB;
-$white: #FFF;
-$brown: #482F30;
+// This is a general style file - share different colors, sizes, etc.
+@import '../../shared/styles/generalStyles.scss';
 
-// Breackpoints
-$breackPointOne: 1279px;
-
-// Flexbox wrapper
+// Gallery styles
 .contentGallery {
 	border-top: 1px solid $blue;
 	height: 500px;
 	width: 100%;
 	position: relative;
   padding-left: 40px;
+	margin-bottom: 300px;
 
   .view {
     width: 605px;
@@ -20,7 +16,7 @@ $breackPointOne: 1279px;
     position: absolute;
     top: 0px;
     left: 35%;
-    background: url('./gallery.jpg');
+    background: url('./pets/gallery.jpg');
     border: 1px solid green;
     margin-top: 60px;
     background-size: cover;
@@ -89,7 +85,7 @@ $breackPointOne: 1279px;
 }
 
 /* Mediaqueries */
-@media (max-width: $breackPointOne) {
+@media (max-width: $breakPoint) {
   .contentGallery {
     border: 1px solid pink;
     height: auto;

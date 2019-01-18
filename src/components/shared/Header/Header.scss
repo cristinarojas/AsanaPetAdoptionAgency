@@ -1,19 +1,12 @@
+// This is a general style file - share different colors, sizes, etc.
+@import '../../../shared/styles/generalStyles.scss';
+
 body {
   margin: 0px;
   padding: 0px;
 }
 
-// Variables
-$blue: #219DDB;
-$white: #FFF;
-$brown: #482F30;
-
-// Devices
-$ipad: 1024px;
-$iphone6: 768px;
-$smaller: 420px;
-
-// Styles
+// Header Styles
 .siteHeader {
   width: 100%;
   height: 700px;
