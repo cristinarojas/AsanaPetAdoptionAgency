@@ -91,11 +91,22 @@ const dogs = [
 ];
 
 class Gallery extends Component {
+  constructor() {
+    super();
 
-  // Open & close gallery image
-  toggle() {
+    // Handling Show, hide & showing selected image.
+    this.state = {
+      toggle: true,
+      selectedDog: ''
+    };
+  }
 
-
+  // Method - Show, hide & obtaining selected image.
+  toggle(dog) {
+    this.setState({
+      toggle: !this.state.toggle,
+      selectedDog: dog.image
+    });
   }
 
   render() {
@@ -109,16 +120,28 @@ class Gallery extends Component {
 
             <div className={styles.scroll}>
               <ul className={styles.list}>
-                { dogs.map((dog, key) => (
-                  <li
-                    key={key}
-                    onClick={this.toggle}
-                    >
+                { dogs.map((dog, key) => {
 
-                      <img className={styles.thumbnail} src={require(`./${dog.image}`)} alt="Asana" />
-                      <span>{dog.name}</span>
-                  </li>
-                ))}
+                  const selectedImage = this.state.selectedDog
+                    ? <img className={styles.image} src={require(`./${this.state.selectedDog}`)} alt="Asana" />
+                    : '';
+
+                  return (
+                    <li
+                      key={key}
+                      onClick={(() => this.toggle(dog))}
+                      >
+                        <img className={styles.thumbnailImage} src={require(`./${dog.image}`)} alt="Asana" />
+                        <span className={styles.name}>{dog.name}</span>
+
+                        <div className={`${this.state.toggle ? styles.hide : styles.show }`}>
+                          <div className={styles.selectedContainer}>
+                            {selectedImage}
+                          </div>
+                        </div>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </aside>

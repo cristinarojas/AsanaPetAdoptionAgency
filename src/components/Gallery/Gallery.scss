@@ -10,7 +10,6 @@
 	margin-bottom: 300px;
 
   .options {
-	  //border: 1px solid red;
 	  width: 90%;
 	  height: 480px;
 
@@ -25,7 +24,6 @@
       width: 100%;
       height: 390px;
       overflow-y: scroll;
-      //border: 1px solid green;
       display: block;
       margin: 0 auto;
 
@@ -42,6 +40,7 @@
           border-bottom: 3px solid $blue;
           text-align: center;
 
+
           &:hover {
             border-bottom: 3px solid $brown;
             cursor: pointer;
@@ -51,38 +50,48 @@
             }
           }
 
-          .thumbnail {
+          .thumbnailImage {
             width: 100%;
             height: 100px;
             object-fit: contain;
           }
 
-          span {
+          .name {
             text-transform: capitalize;
             color: $blue;
             font-family: 'Montserrat', sans-serif;
             vertical-align: -webkit-baseline-middle;
           }
 
+
           .hide {
+            display: none;
+          }
 
-            .container {
-              visibility: visible;
+          .show {
+            overflow: hidden;
+            position:fixed;
+            padding:0;
+            margin:0;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.08);
+            display: block;
 
-              position:fixed;
-              padding:0;
-              margin:0;
-
-              top:0;
-              left:0;
-
-              width: 100%;
-              height: 100%;
-              background:rgba(255,255,255,0.5);
+            .selectedContainer {
+              width: 600px;
+              height: 550px;
+              margin: 0 auto;
+              margin-top: 5%;
 
               .image {
-                width: 200px;
-                height: 200px;
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+                -webkit-animation: fadeIn 1s;
+                animation: fadeIn 1s;
               }
             }
           }
@@ -92,60 +101,18 @@
   }
 }
 
+/* Transition to show the selected image in gallery */
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
 /* Mediaqueries */
 @media (max-width: $breakPoint) {
-  .contentGallery {
-    border: 1px solid pink;
-    height: auto;
 
-    .options {
-  		display: block;
-  		position: inherit;
-  		margin: 0 auto;
-  		margin-top: 30px;
-      width: 100%;
-      height: 210px;
-
-      .scroll {
-    		width: 100%;
-    		height: 145px;
-    		border: 1px solid blue;
-
-        .list {
-      		display: block;
-
-          li {
-        		display: inline-block;
-
-            a {
-              .show {
-            		position: absolute;
-                top: -433px;
-                display: block;
-                margin: 0 auto;
-                left: inherit;
-                width: 605px;
-                height: 400px;
-                left: 50%;
-                -webkit-transform: translateX(-50%);
-                transform: translateX(-50%);
-                left: 50%;
-
-                .max {
-                  left: 50%;
-                  -webkit-transform: translateX(-50%);
-                  transform: translateX(-50%);
-                  margin-top: 0px;
-                }
-
-                &:hover {
-                  display: none;
-                }
-            	}
-            }
-        	}
-      	}
-    	}
-  	}
-  }
 }
