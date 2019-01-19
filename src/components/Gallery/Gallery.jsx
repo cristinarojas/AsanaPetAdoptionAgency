@@ -98,15 +98,22 @@ class Gallery extends Component {
     // Handling Show, hide & showing selected image.
     this.state = {
       toggle: true,
-      selectedDog: ''
+      selectedDog: '',
+      close: false
     };
   }
 
   // Method - Show, hide & obtaining selected image.
-  toggle(dog) {
+  showImage(dog) {
     this.setState({
-      toggle: !this.state.toggle,
-      selectedDog: dog.image
+      toggle: !this.state.toggle, // To apply a class and show big image
+      selectedDog: dog.image // To print the path of the big image (selected)
+    });
+  }
+
+  close() {
+    this.setState({
+      close: !this.state.close // To apply the class and hide big image
     });
   }
 
@@ -115,8 +122,11 @@ class Gallery extends Component {
       <Fragment>
         <section className={styles.contentGallery}>
           <aside className={styles.options}>
+
             <div className={styles.mousescroll}>
-              mouse
+              <div className={styles.mouse}>
+                <div className={styles.scroller}></div>
+              </div>
             </div>
 
             <div className={styles.scroll}>
@@ -130,7 +140,7 @@ class Gallery extends Component {
                   return (
                     <li
                       key={key}
-                      onClick={(() => this.toggle(dog))}
+                      onClick={(() => this.showImage(dog))}
                       >
                         <LazyLoad height={100} offsetVertical={300}>
                           <img className={styles.thumbnailImage} src={require(`./${dog.image}`)} alt="Asana" />
@@ -139,6 +149,10 @@ class Gallery extends Component {
 
                         <div className={`${this.state.toggle ? styles.hide : styles.show }`}>
                           <div className={styles.selectedContainer}>
+                            <span
+                              className={styles.close}
+                              onClick={(() => this.close())}
+                            >x</span>
                             {selectedImage}
                           </div>
                         </div>
