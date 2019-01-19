@@ -4,6 +4,7 @@ import React, { Fragment } from 'react';
 // Styles
 import styles from './Header.scss';
 import logo from '@images/logo.png';
+import iconmap from '@images/iconmap.png';
 
 const Header = () => {
   return (
@@ -20,7 +21,7 @@ const Header = () => {
           <p className={styles.contactus}>
             Contact Us: (800)-555-43-21
             <a href="#">
-              <i className={'fas fa-map-marker-alt'}></i>
+              <img src={iconmap} alt="Location"/>
             </a>
           </p>
         </nav>

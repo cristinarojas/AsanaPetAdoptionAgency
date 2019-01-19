@@ -1,5 +1,6 @@
 // Dependencies
 import React, { Fragment, Component } from 'react';
+import LazyLoad from 'react-lazy-load';
 
 // Styles
 import styles from './Gallery.scss';
@@ -131,7 +132,9 @@ class Gallery extends Component {
                       key={key}
                       onClick={(() => this.toggle(dog))}
                       >
-                        <img className={styles.thumbnailImage} src={require(`./${dog.image}`)} alt="Asana" />
+                        <LazyLoad height={100} offsetVertical={300}>
+                          <img className={styles.thumbnailImage} src={require(`./${dog.image}`)} alt="Asana" />
+                        </LazyLoad>
                         <span className={styles.name}>{dog.name}</span>
 
                         <div className={`${this.state.toggle ? styles.hide : styles.show }`}>

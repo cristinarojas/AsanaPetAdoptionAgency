@@ -11,6 +11,7 @@ import Text from './shared/Content/Text/Text';
 import Gallery from './Gallery/Gallery';
 import Puppies from './Puppies/Puppies';
 
+// Main layout
 const App = props => (
   <div>
     <Header />
