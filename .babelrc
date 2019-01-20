@@ -8,7 +8,9 @@
       "root": ["./"],
       "alias": {
         "@components": "./src/components",
-        "@images": "./src/shared/images"
+        "@images": "./src/shared/images",
+        "@layout": "./src/shared/components/layout",
+        "@data": "./src/shared/data"
       }
     }]
   ]
