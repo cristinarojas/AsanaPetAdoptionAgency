@@ -58,3 +58,32 @@
     }
   }
 }
+
+/* Responsive */
+@media screen and (max-width: $breakPoint) {
+  .contentText {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+
+    .heroText {
+      display: block;
+      margin: 0 auto;
+
+      .text {
+        display: block;
+        width: inherit;
+        margin-right: 0%;
+        text-align: center;
+      }
+
+      .adopt {
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+        background-size: 100%;
+        width: inherit;
+      }
+    }
+  }
+}

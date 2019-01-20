@@ -28,6 +28,7 @@ const App = props => (
         }
       ]}
     />
+
     <Header />
     <Puppies />
     <Text />

@@ -12,3 +12,13 @@
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
+
+/* Responsive */
+@media screen and (max-width: $breakPoint) {
+  .siteFooter {
+    display: block;
+    padding-left: 0px;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+}

@@ -6,7 +6,7 @@ import LazyLoad from 'react-lazy-load';
 import styles from './Gallery.scss';
 
 // Data.
-import dogs from '@data/shelter2000Pets.js';
+import dogs from '@data/shelter15Pets.js';
 
 class Gallery extends Component {
   constructor() {
