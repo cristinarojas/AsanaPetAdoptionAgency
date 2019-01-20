@@ -14,16 +14,17 @@ import Puppies from './Puppies/Puppies';
 // Main layout
 const App = props => (
   <div>
+    {/* This Helmet will help us to manage the SEO on internet */}
     <Helmet
-      title="Person Information"
+      title="Asana pet adoption"
       meta={[
         {
           name: 'title',
-          content: 'Person Information'
+          content: 'Asana pet adoption'
         },
         {
           name: 'description',
-          content: 'This recipe talks about React Helmet'
+          content: 'Asana is actually a pet adoption agency. (Our SF office is so dog-friendly that its not too far a stretch!) We need a web page that contains an image gallery of the pets we have available for adoption. Wed like you to build it'
         }
       ]}
     />
