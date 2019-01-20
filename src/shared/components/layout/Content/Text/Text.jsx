@@ -9,7 +9,7 @@ const Text = () => {
     <section className={styles.contentText}>
       <Fragment>
         <span className={styles.title}>
-          Why should i adopt a puppy?
+          Why should I adopt a puppy?
         </span>
         <div className={styles.heroText}>
           <div className={styles.text}>
