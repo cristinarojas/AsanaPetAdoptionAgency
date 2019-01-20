@@ -7,6 +7,7 @@ import styles from './Gallery.scss';
 
 // Data.
 import dogs from '@data/shelter15Pets.js';
+// import dogs from '@data/shelter15Pets.js'; // Test partnering with a shelter that has 2000 pets
 
 class Gallery extends Component {
   constructor() {
@@ -77,8 +78,6 @@ class Gallery extends Component {
                           </div>
                         </>
                       </LazyLoad>
-
-
                     </li>
                   );
                 })}

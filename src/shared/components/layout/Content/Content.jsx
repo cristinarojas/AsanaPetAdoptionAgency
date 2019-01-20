@@ -2,9 +2,9 @@
 import React, { Fragment } from 'react';
 
 // Styles
-import styles from './Text.scss';
+import styles from './Content.scss';
 
-const Text = () => {
+const Content = () => {
   return (
     <section className={styles.contentText}>
       <Fragment>
@@ -27,4 +27,4 @@ const Text = () => {
   );
 }
 
-export default Text;
+export default Content;

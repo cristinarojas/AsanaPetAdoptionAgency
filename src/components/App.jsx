@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 // Shared Components
 import Header from '@layout/Header/Header';
 import Footer from '@layout/Footer/Footer';
-import Text from '@layout/Content/Text/Text';
+import Content from '@layout/Content/Content';
 
 // Components
 import Gallery from './Gallery/Gallery';
@@ -31,7 +31,7 @@ const App = props => (
 
     <Header />
     <Puppies />
-    <Text />
+    <Content />
     <Gallery />
     <Footer />
   </div>
