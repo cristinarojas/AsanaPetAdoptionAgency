@@ -81,11 +81,12 @@ body {
     background-repeat: no-repeat;
     background-image: url('./mainbg.jpg');
     background-size: 100%;
+    position: relative;
 
     .animateText {
       width: 100%;
       position: absolute;
-      bottom: 20px;
+      bottom: 0px;
       align-items: center;
       justify-content: center;
       color: $blue;

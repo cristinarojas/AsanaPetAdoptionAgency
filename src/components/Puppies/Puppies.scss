@@ -1,11 +1,13 @@
+// This is a general style file - share different colors, sizes, etc.
+@import '../../shared/styles/generalStyles.scss';
+
 // Variables
 $blue: #219DDB;
 $white: #FFF;
 $brown: #482F30;
 
 // Devices
-$firstBreakPoint: 1279px;
-$secondBreakPoint: 985px;
+
 
 .contentPuppies {
   height: 225px;
@@ -21,11 +23,18 @@ $secondBreakPoint: 985px;
     background-color: $blue;
 
     .puppies {
-      display: inline-block;
-      margin: 0px;
-      position: absolute;
-      top: -150px;
-      list-style: none;
+    margin: 0px;
+    position: absolute;
+    top: -150px;
+    list-style: none;
+    width: 1400px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-left: 0px;
+    text-align: center;
 
       li {
         display: inline-block;
@@ -35,7 +44,7 @@ $secondBreakPoint: 985px;
   }
 }
 
-@media screen and (max-width: $firstBreakPoint) {
+@media screen and (max-width: $breakPoint) {
   .contentPuppies {
     .line {
       .puppies {
@@ -44,6 +53,7 @@ $secondBreakPoint: 985px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -84%);
+        margin-top: -118px;
 
         li {
           &:nth-child(1) {
@@ -67,7 +77,7 @@ $secondBreakPoint: 985px;
   }
 }
 
-@media screen and (max-width: $secondBreakPoint) {
+@media screen and (max-width: $specialBreakPoint) {
   .contentPuppies {
     .line {
       .puppies {
@@ -76,6 +86,7 @@ $secondBreakPoint: 985px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -84%);
+        margin-top: -118px;
 
         li {
           &:nth-child(1) {
