@@ -1,3 +1,14 @@
+# To run the project
+
+Install the packages run:
+
+npm install
+
+Execute the project:
+
+npm start
+
+
 # Asana WebDev Take-Home Exercise
 
 ## Instructions
