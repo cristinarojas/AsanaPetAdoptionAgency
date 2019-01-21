@@ -4,19 +4,16 @@
 // Content Text styles
 .contentText {
   height: 100%;
-  text-align: left;
   padding: 10px;
-  padding-left: 40px;
+  text-align: center;
 
   .title {
     font-size: 28px;
     font-family: 'Gochi Hand', cursive;
   }
 
-
   .heroText {
     font-size: 16px;
-    margin-right: 100px;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 100px;
 
@@ -28,7 +25,10 @@
       text-align: justify;
 
       p {
-
+        span {
+          font-weight: 900;
+          font-size: 22px;
+        }
         &:nth-child(2) {
           margin-top: 30px;
         }

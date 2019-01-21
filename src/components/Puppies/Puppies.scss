@@ -6,9 +6,6 @@ $blue: #219DDB;
 $white: #FFF;
 $brown: #482F30;
 
-// Devices
-
-
 .contentPuppies {
   height: 225px;
   width: 100%;
@@ -23,18 +20,18 @@ $brown: #482F30;
     background-color: $blue;
 
     .puppies {
-    margin: 0px;
-    position: absolute;
-    top: -150px;
-    list-style: none;
-    width: 1400px;
-    height: 50px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    padding-left: 0px;
-    text-align: center;
+      margin: 0px;
+      position: absolute;
+      top: -150px;
+      list-style: none;
+      width: 100%;
+      height: 50px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      padding-left: 0px;
+      text-align: center;
 
       li {
         display: inline-block;

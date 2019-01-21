@@ -1,10 +1,10 @@
 // This is a general style file - share different colors, sizes, etc.
 @import '../../../styles/generalStyles.scss';
 
-body {
+html, body {
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
+  //overflow-x: hidden;
 }
 
 // Header Styles

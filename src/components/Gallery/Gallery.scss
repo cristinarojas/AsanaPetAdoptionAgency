@@ -12,6 +12,8 @@
 	  width: 90%;
 	  height: 480px;
     margin-left: 40px;
+    display: block;
+    margin: 0 auto;
 
     .mousescroll {
     	height: 60px;
@@ -168,4 +170,25 @@
 			margin: 0 auto;
 		}
 	}
+}
+
+@media screen and (max-width: $iphone6) {
+  .contentGallery {
+    .options {
+      .scroll {
+        .list {
+          li {
+            .show {
+              .selectedContainer {
+                .image {
+                  width: 300px;
+                  height: 300px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
