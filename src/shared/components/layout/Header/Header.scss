@@ -4,7 +4,6 @@
 html, body {
   margin: 0px;
   padding: 0px;
-  //overflow-x: hidden;
 }
 
 // Header Styles
@@ -163,12 +162,16 @@ html, body {
         top: 45px;
 
         a {
-          font-size: 16px;
+          font-size: 14px;
 
           span {
-            font-size: 18px;
+            font-size: 14px;
           }
         }
+      }
+
+      .contactus {
+        font-size: 8px;
       }
     }
   }
